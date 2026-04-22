@@ -9,7 +9,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 
 const GROQ_API_KEY = process.env.GROQ_API_KEY;
-const GROQ_MODEL   = 'llama3-70b-8192';
+const GROQ_MODEL   = 'llama-3.1-70b-versatile';
 
 // ── helpers ────────────────────────────────────────────────────────────────
 

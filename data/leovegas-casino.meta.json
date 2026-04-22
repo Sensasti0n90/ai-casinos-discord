@@ -1,0 +1,50 @@
+{
+  "name": "LeoVegas Casino",
+  "slug": "leovegas-casino",
+  "url": "https://www.leovegas.com",
+  "founded": 2012,
+  "rating": 4.6,
+  "bonus": "Up to $1000 + 200 Free Spins",
+  "bonus_code": "LEOVIP",
+  "min_deposit": 10,
+  "wagering": 35,
+  "payment_methods": [
+    "Visa",
+    "Mastercard",
+    "Trustly",
+    "Skrill",
+    "Neteller",
+    "Paysafecard"
+  ],
+  "withdrawal_time": "1-2 business days",
+  "languages": [
+    "English",
+    "Swedish",
+    "Norwegian",
+    "Finnish",
+    "German"
+  ],
+  "mobile": true,
+  "live_casino": true,
+  "sports": false,
+  "slots": true,
+  "table_games": true,
+  "live_games": true,
+  "pros": [
+    "King of Mobile Casino",
+    "Huge game selection",
+    "Fast withdrawals",
+    "Great live casino"
+  ],
+  "cons": [
+    "No sports betting",
+    "Some countries restricted"
+  ],
+  "tags": [
+    "mobile casino",
+    "free spins",
+    "live dealer",
+    "slots"
+  ],
+  "publishedDate": "2026-04-22T09:25:51.572Z"
+}

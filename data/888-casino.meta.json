@@ -1,0 +1,50 @@
+{
+  "name": "888 Casino",
+  "slug": "888-casino",
+  "url": "https://www.888casino.com",
+  "founded": 1997,
+  "rating": 4.5,
+  "bonus": "Up to $200 Welcome Bonus",
+  "bonus_code": "WELCOME888",
+  "min_deposit": 20,
+  "wagering": 30,
+  "payment_methods": [
+    "Visa",
+    "Mastercard",
+    "PayPal",
+    "Skrill",
+    "Neteller",
+    "Wire Transfer"
+  ],
+  "withdrawal_time": "2-5 business days",
+  "languages": [
+    "English",
+    "Spanish",
+    "German",
+    "Portuguese",
+    "Russian"
+  ],
+  "mobile": true,
+  "live_casino": true,
+  "sports": true,
+  "slots": true,
+  "table_games": true,
+  "live_games": true,
+  "pros": [
+    "One of the oldest casinos online",
+    "Wide game variety",
+    "Own software platform",
+    "Licensed in Gibraltar"
+  ],
+  "cons": [
+    "Slower withdrawals compared to competitors",
+    "Customer support can be slow"
+  ],
+  "tags": [
+    "veteran casino",
+    "trusted",
+    "own software",
+    "poker"
+  ],
+  "publishedDate": "2026-04-22T09:29:25.576Z"
+}

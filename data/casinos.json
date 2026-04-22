@@ -9,18 +9,44 @@
     "bonus_code": "BET365",
     "min_deposit": 10,
     "wagering": 20,
-    "payment_methods": ["Visa", "Mastercard", "PayPal", "Skrill", "Neteller", "Bank Transfer"],
+    "payment_methods": [
+      "Visa",
+      "Mastercard",
+      "PayPal",
+      "Skrill",
+      "Neteller",
+      "Bank Transfer"
+    ],
     "withdrawal_time": "1-3 business days",
-    "languages": ["English", "Spanish", "German", "French", "Italian"],
+    "languages": [
+      "English",
+      "Spanish",
+      "German",
+      "French",
+      "Italian"
+    ],
     "mobile": true,
     "live_casino": true,
     "sports": true,
     "slots": true,
     "table_games": true,
     "live_games": true,
-    "pros": ["Huge sports betting section", "Trusted brand since 2000", "Fast payouts", "Excellent mobile app"],
-    "cons": ["Not available in all countries", "Bonus wagering requirements can be high"],
-    "tags": ["sports betting", "live casino", "trusted", "mobile-friendly"]
+    "pros": [
+      "Huge sports betting section",
+      "Trusted brand since 2000",
+      "Fast payouts",
+      "Excellent mobile app"
+    ],
+    "cons": [
+      "Not available in all countries",
+      "Bonus wagering requirements can be high"
+    ],
+    "tags": [
+      "sports betting",
+      "live casino",
+      "trusted",
+      "mobile-friendly"
+    ]
   },
   {
     "name": "LeoVegas Casino",
@@ -32,18 +58,44 @@
     "bonus_code": "LEOVIP",
     "min_deposit": 10,
     "wagering": 35,
-    "payment_methods": ["Visa", "Mastercard", "Trustly", "Skrill", "Neteller", "Paysafecard"],
+    "payment_methods": [
+      "Visa",
+      "Mastercard",
+      "Trustly",
+      "Skrill",
+      "Neteller",
+      "Paysafecard"
+    ],
     "withdrawal_time": "1-2 business days",
-    "languages": ["English", "Swedish", "Norwegian", "Finnish", "German"],
+    "languages": [
+      "English",
+      "Swedish",
+      "Norwegian",
+      "Finnish",
+      "German"
+    ],
     "mobile": true,
     "live_casino": true,
     "sports": false,
     "slots": true,
     "table_games": true,
     "live_games": true,
-    "pros": ["King of Mobile Casino", "Huge game selection", "Fast withdrawals", "Great live casino"],
-    "cons": ["No sports betting", "Some countries restricted"],
-    "tags": ["mobile casino", "free spins", "live dealer", "slots"]
+    "pros": [
+      "King of Mobile Casino",
+      "Huge game selection",
+      "Fast withdrawals",
+      "Great live casino"
+    ],
+    "cons": [
+      "No sports betting",
+      "Some countries restricted"
+    ],
+    "tags": [
+      "mobile casino",
+      "free spins",
+      "live dealer",
+      "slots"
+    ]
   },
   {
     "name": "888 Casino",
@@ -55,18 +107,44 @@
     "bonus_code": "WELCOME888",
     "min_deposit": 20,
     "wagering": 30,
-    "payment_methods": ["Visa", "Mastercard", "PayPal", "Skrill", "Neteller", "Wire Transfer"],
+    "payment_methods": [
+      "Visa",
+      "Mastercard",
+      "PayPal",
+      "Skrill",
+      "Neteller",
+      "Wire Transfer"
+    ],
     "withdrawal_time": "2-5 business days",
-    "languages": ["English", "Spanish", "German", "Portuguese", "Russian"],
+    "languages": [
+      "English",
+      "Spanish",
+      "German",
+      "Portuguese",
+      "Russian"
+    ],
     "mobile": true,
     "live_casino": true,
     "sports": true,
     "slots": true,
     "table_games": true,
     "live_games": true,
-    "pros": ["One of the oldest casinos online", "Wide game variety", "Own software platform", "Licensed in Gibraltar"],
-    "cons": ["Slower withdrawals compared to competitors", "Customer support can be slow"],
-    "tags": ["veteran casino", "trusted", "own software", "poker"]
+    "pros": [
+      "One of the oldest casinos online",
+      "Wide game variety",
+      "Own software platform",
+      "Licensed in Gibraltar"
+    ],
+    "cons": [
+      "Slower withdrawals compared to competitors",
+      "Customer support can be slow"
+    ],
+    "tags": [
+      "veteran casino",
+      "trusted",
+      "own software",
+      "poker"
+    ]
   },
   {
     "name": "Casumo Casino",
@@ -78,18 +156,44 @@
     "bonus_code": "",
     "min_deposit": 10,
     "wagering": 30,
-    "payment_methods": ["Visa", "Mastercard", "Trustly", "Skrill", "Neteller"],
+    "payment_methods": [
+      "Visa",
+      "Mastercard",
+      "Trustly",
+      "Skrill",
+      "Neteller"
+    ],
     "withdrawal_time": "1-3 business days",
-    "languages": ["English", "Swedish", "Norwegian", "Finnish", "German", "Japanese"],
+    "languages": [
+      "English",
+      "Swedish",
+      "Norwegian",
+      "Finnish",
+      "German",
+      "Japanese"
+    ],
     "mobile": true,
     "live_casino": true,
     "sports": false,
     "slots": true,
     "table_games": true,
     "live_games": true,
-    "pros": ["Unique gamification system", "Adventure-style rewards", "Excellent UX design", "No bonus code needed"],
-    "cons": ["No dedicated poker room", "Limited payment options in some regions"],
-    "tags": ["gamification", "adventure", "unique experience", "slots"]
+    "pros": [
+      "Unique gamification system",
+      "Adventure-style rewards",
+      "Excellent UX design",
+      "No bonus code needed"
+    ],
+    "cons": [
+      "No dedicated poker room",
+      "Limited payment options in some regions"
+    ],
+    "tags": [
+      "gamification",
+      "adventure",
+      "unique experience",
+      "slots"
+    ]
   },
   {
     "name": "Betway Casino",
@@ -101,18 +205,43 @@
     "bonus_code": "BETWAY250",
     "min_deposit": 10,
     "wagering": 50,
-    "payment_methods": ["Visa", "Mastercard", "PayPal", "Neteller", "Skrill", "Paysafecard"],
+    "payment_methods": [
+      "Visa",
+      "Mastercard",
+      "PayPal",
+      "Neteller",
+      "Skrill",
+      "Paysafecard"
+    ],
     "withdrawal_time": "1-5 business days",
-    "languages": ["English", "Spanish", "Portuguese", "German"],
+    "languages": [
+      "English",
+      "Spanish",
+      "Portuguese",
+      "German"
+    ],
     "mobile": true,
     "live_casino": true,
     "sports": true,
     "slots": true,
     "table_games": true,
     "live_games": true,
-    "pros": ["Strong sports betting", "Licensed in multiple jurisdictions", "Good mobile experience", "Microgaming powered"],
-    "cons": ["Higher wagering requirements", "Limited live chat hours"],
-    "tags": ["sports betting", "microgaming", "trusted brand", "mobile"]
+    "pros": [
+      "Strong sports betting",
+      "Licensed in multiple jurisdictions",
+      "Good mobile experience",
+      "Microgaming powered"
+    ],
+    "cons": [
+      "Higher wagering requirements",
+      "Limited live chat hours"
+    ],
+    "tags": [
+      "sports betting",
+      "microgaming",
+      "trusted brand",
+      "mobile"
+    ]
   },
   {
     "name": "Test Casino",
@@ -124,17 +253,66 @@
     "bonus_code": "Test200",
     "min_deposit": 10,
     "wagering": 40,
-    "payment_methods": ["Visa", "Mastercard", "Paysafecard"],
+    "payment_methods": [
+      "Visa",
+      "Mastercard",
+      "Paysafecard"
+    ],
     "withdrawal_time": "1-5 business days",
-    "languages": ["English", "Spanish", "Portuguese", "German"],
+    "languages": [
+      "English",
+      "Spanish",
+      "Portuguese",
+      "German"
+    ],
     "mobile": true,
     "live_casino": true,
     "sports": true,
     "slots": true,
     "table_games": true,
     "live_games": true,
-    "pros": ["Good mobile experience", "Microgaming powered"],
-    "cons": ["Higher wagering requirements", "Limited live chat hours"],
-    "tags": ["sports betting", "microgaming", "trusted brand", "mobile"]
+    "pros": [
+      "Good mobile experience",
+      "Microgaming powered"
+    ],
+    "cons": [
+      "Higher wagering requirements",
+      "Limited live chat hours"
+    ],
+    "tags": [
+      "sports betting",
+      "microgaming",
+      "trusted brand",
+      "mobile"
+    ]
+  },
+  {
+    "name": "Rainbet Casino",
+    "slug": "rainbet-casino",
+    "url": "https://rainbet.com/",
+    "founded": 2023,
+    "rating": 4.7,
+    "bonus": "250% up to $2100 + 60 Bonus spins",
+    "bonus_code": "",
+    "min_deposit": 10,
+    "wagering": 30,
+    "payment_methods": [
+      "Visa"
+    ],
+    "withdrawal_time": "1-3 business days",
+    "languages": [
+      "English"
+    ],
+    "mobile": true,
+    "live_casino": true,
+    "sports": false,
+    "slots": true,
+    "table_games": true,
+    "live_games": true,
+    "pros": [],
+    "cons": [],
+    "tags": [
+      "rainbet-casino"
+    ]
   }
 ]

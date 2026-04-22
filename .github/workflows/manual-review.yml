@@ -1,0 +1,85 @@
+# manual-review.yml
+# Triggered by Discord bot via GitHub API – generates a specific casino review
+
+name: Manual Casino Review (Discord)
+
+on:
+  workflow_dispatch:
+    inputs:
+      casino_name:
+        description: 'Casino name (slug or partial name). Leave empty for next in queue.'
+        required: false
+        default: ''
+      scheduled_date:
+        description: 'Scheduled date YYYY-MM-DD (leave empty to publish now)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  generate-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # If a scheduled_date is provided and it's not today, just queue it
+      - name: Check if should publish today
+        id: check_date
+        run: |
+          SCHED="${{ github.event.inputs.scheduled_date }}"
+          TODAY=$(date -u +'%Y-%m-%d')
+          if [ -z "$SCHED" ] || [ "$SCHED" = "$TODAY" ]; then
+            echo "publish=true" >> $GITHUB_OUTPUT
+          else
+            echo "publish=false" >> $GITHUB_OUTPUT
+            echo "📅 Review scheduled for $SCHED — skipping publish today."
+          fi
+
+      - name: Generate casino review
+        if: steps.check_date.outputs.publish == 'true'
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          CASINO="${{ github.event.inputs.casino_name }}"
+          if [ -z "$CASINO" ]; then
+            node src/generate-review.js
+          else
+            node src/generate-review.js "$CASINO"
+          fi
+
+      - name: Rebuild site index
+        if: steps.check_date.outputs.publish == 'true'
+        run: node src/build-site.js
+
+      - name: Commit changes
+        if: steps.check_date.outputs.publish == 'true'
+        run: |
+          git config user.name  "AI Casinos Bot"
+          git config user.email "bot@ai-casinos.review"
+          git add data/ site/
+          git diff --staged --quiet || git commit -m "🎰 Discord trigger: ${{ github.event.inputs.casino_name || 'auto' }} review"
+          git push
+
+      - name: Deploy to FTP
+        if: steps.check_date.outputs.publish == 'true'
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server:    ${{ secrets.FTP_HOST }}
+          username:  ${{ secrets.FTP_USERNAME }}
+          password:  ${{ secrets.FTP_PASSWORD }}
+          local-dir:  ./site/
+          server-dir: /ai-casinos-discord/
+          exclude: |
+            **/.git*
+            **/node_modules/**

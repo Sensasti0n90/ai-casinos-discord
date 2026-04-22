@@ -8,7 +8,7 @@
  *
  * ENVIRONMENT VARIABLES (set in Cloudflare Dashboard → Worker → Settings → Variables):
  *   DISCORD_PUBLIC_KEY  – from Discord Developer Portal
- *   GITHUB_TOKEN        – GitHub Personal Access Token (repo + workflow scope)
+ *   GIT_TOKEN        – GitHub Personal Access Token (repo + workflow scope)
  *   GITHUB_REPO         – "your-username/ai-casinos-discord"
  *   DISCORD_BOT_TOKEN   – from Discord Developer Portal (for sending follow-ups)
  */
@@ -51,7 +51,7 @@ async function triggerGitHub(env, workflowFile, inputs = {}) {
   const res = await fetch(url, {
     method: 'POST',
     headers: {
-      'Authorization': `Bearer ${env.GITHUB_TOKEN}`,
+      'Authorization': `Bearer ${env.GIT_TOKEN}`,
       'Accept': 'application/vnd.github+json',
       'Content-Type': 'application/json',
       'User-Agent': 'AI-Casinos-Discord-Bot/1.0'
@@ -130,7 +130,7 @@ export default {
                 `Casino: **${casinoName || 'next in queue'}**\n` +
                 `⏳ Will be live on your site in ~2 minutes.\n` +
                 `📋 Check progress: https://github.com/${env.GITHUB_REPO}/actions`
-              : `❌ Failed to trigger GitHub Actions. Check your GITHUB_TOKEN.`
+              : `❌ Failed to trigger GitHub Actions. Check your GIT_TOKEN.`
           }
         });
       }
@@ -150,7 +150,7 @@ export default {
             content: ok
               ? `📅 **Scheduled!**\nCasino: **${casinoName}** → Date: **${date}**\n` +
                 `The review will be published automatically on that date.`
-              : `❌ Failed to schedule. Check your GITHUB_TOKEN.`
+              : `❌ Failed to schedule. Check your GIT_TOKEN.`
           }
         });
       }

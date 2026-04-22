@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Online Casinos 2026 – Honest AI-Powered Reviews</title>
+  <meta name="description" content="Find the best online casinos of 2026. Expert reviews, exclusive bonuses, and unbiased ratings. Updated daily with AI-powered insights." />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="canonical" href="/" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "AI Casinos Review",
+    "url": "https://zlatev.elegance.bg/ai-casinos-discord/"
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">🎰 AI Casinos Review</a>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="best-casinos.html">Best Casinos</a>
+        <a href="bonuses.html">Bonuses</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Best Online Casinos 2026</h1>
+      <p class="hero-sub">Honest, AI-powered reviews. Updated daily. No fluff.</p>
+      <div class="hero-stats">
+        <div class="stat"><strong>1</strong><span>Reviews</span></div>
+        <div class="stat"><strong>Daily</strong><span>Updated</span></div>
+        <div class="stat"><strong>100%</strong><span>Independent</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter bar -->
+  <div class="filter-bar container">
+    <button class="filter-btn active" data-filter="all">All Casinos</button>
+    <button class="filter-btn" data-filter="live-casino">Live Casino</button>
+    <button class="filter-btn" data-filter="sports">Sports Betting</button>
+    <button class="filter-btn" data-filter="mobile">Mobile</button>
+    <button class="filter-btn" data-filter="slots">Slots</button>
+  </div>
+
+  <main class="container casino-list" id="casinoList">
+    
+  <article class="casino-card" data-rating="4.7" data-tags="sports betting,live casino,trusted,mobile-friendly">
+    <div class="card-logo">B</div>
+    <div class="card-body">
+      <h2 class="card-title">
+        <a href="reviews/bet365-casino.html">Bet365 Casino</a>
+      </h2>
+      <div class="card-stars">
+        <span class="stars">★★★★½</span>
+        <strong>4.7/5</strong>
+      </div>
+      <div class="card-bonus">🎁 Up to $100 Welcome Bonus</div>
+      <div class="card-features">🎰 Slots · 🎥 Live Casino · ⚽ Sports · 📱 Mobile</div>
+    </div>
+    <div class="card-cta">
+      <a href="reviews/bet365-casino.html" class="btn-review">Read Review</a>
+      <a href="https://www.bet365.com" target="_blank" rel="noopener nofollow" class="btn-visit">Visit Casino →</a>
+    </div>
+  </article>
+  </main>
+
+  <section class="info-section container">
+    <h2>Why Trust Our Reviews?</h2>
+    <div class="info-grid">
+      <div class="info-card">
+        <span class="info-icon">🤖</span>
+        <h3>AI-Powered Analysis</h3>
+        <p>Every review is generated and fact-checked using advanced AI, ensuring consistency and depth.</p>
+      </div>
+      <div class="info-card">
+        <span class="info-icon">📅</span>
+        <h3>Updated Daily</h3>
+        <p>New casino reviews published every day. Our database is always current.</p>
+      </div>
+      <div class="info-card">
+        <span class="info-icon">🔍</span>
+        <h3>Independent</h3>
+        <p>No paid placements. Ratings are based purely on objective criteria.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 AI Casinos Review. For entertainment purposes only. 18+ only.</p>
+      <p>
+        <a href="responsible-gambling.html">Responsible Gambling</a> |
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="sitemap.xml">Sitemap</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Filter functionality
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        const filter = this.dataset.filter;
+        document.querySelectorAll('.casino-card').forEach(card => {
+          if (filter === 'all') {
+            card.style.display = '';
+          } else {
+            const tags = card.dataset.tags || '';
+            card.style.display = tags.includes(filter) ? '' : 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

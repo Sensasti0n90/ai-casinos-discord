@@ -1,11 +1,11 @@
 # register-commands.yml
-# Run this ONCE to register Discord slash commands.
+# Run this ONCE (or again after adding new commands) to register Discord slash commands.
 # Trigger manually from: GitHub repo → Actions → Register Discord Commands → Run workflow
 
 name: Register Discord Commands
 
 on:
-  workflow_dispatch:   # manual trigger only
+  workflow_dispatch:
 
 jobs:
   register:
@@ -13,11 +13,15 @@ jobs:
     steps:
       - name: Register slash commands
         run: |
-          curl -s -o response.json -w "%{http_code}" \
+          curl -s -o response.json \
             -X PUT \
             -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
             -H "Content-Type: application/json" \
             -d '[
+              {
+                "name": "add",
+                "description": "Add a new casino to the review queue (opens a form)"
+              },
               {
                 "name": "review",
                 "description": "Generate and publish a casino review",
@@ -40,10 +44,8 @@ jobs:
               {"name":"status", "description":"Show bot and site status"},
               {"name":"help",   "description":"Show all available commands"}
             ]' \
-            "https://discord.com/api/v10/applications/${{ secrets.DISCORD_APP_ID }}/commands" \
-          | tee http_code.txt
+            "https://discord.com/api/v10/applications/${{ secrets.DISCORD_APP_ID }}/commands"
 
-          echo ""
           echo "--- Response ---"
           cat response.json | python3 -m json.tool 2>/dev/null || cat response.json
 
@@ -59,7 +61,7 @@ jobs:
               print(f'  /{c[\"name\"]} – {c[\"description\"]}')
           "
           else
-            echo "❌ Registration failed. Check DISCORD_BOT_TOKEN and DISCORD_APP_ID secrets."
+            echo "❌ Registration failed."
             cat response.json
             exit 1
           fi

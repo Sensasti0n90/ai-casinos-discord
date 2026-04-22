@@ -1,0 +1,12 @@
+{
+  "name": "ai-casinos-discord",
+  "version": "1.0.0",
+  "description": "Automated casino review website powered by AI",
+  "type": "module",
+  "scripts": {
+    "generate": "node src/generate-review.js",
+    "build": "node src/build-site.js",
+    "register-commands": "node cloudflare-worker/register-commands.js"
+  },
+  "engines": { "node": ">=18" }
+}

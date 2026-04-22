@@ -1,0 +1,49 @@
+{
+  "name": "Betway Casino",
+  "slug": "betway-casino",
+  "url": "https://casino.betway.com",
+  "founded": 2006,
+  "rating": 4.3,
+  "bonus": "Up to $250 Welcome Bonus",
+  "bonus_code": "BETWAY250",
+  "min_deposit": 10,
+  "wagering": 50,
+  "payment_methods": [
+    "Visa",
+    "Mastercard",
+    "PayPal",
+    "Neteller",
+    "Skrill",
+    "Paysafecard"
+  ],
+  "withdrawal_time": "1-5 business days",
+  "languages": [
+    "English",
+    "Spanish",
+    "Portuguese",
+    "German"
+  ],
+  "mobile": true,
+  "live_casino": true,
+  "sports": true,
+  "slots": true,
+  "table_games": true,
+  "live_games": true,
+  "pros": [
+    "Strong sports betting",
+    "Licensed in multiple jurisdictions",
+    "Good mobile experience",
+    "Microgaming powered"
+  ],
+  "cons": [
+    "Higher wagering requirements",
+    "Limited live chat hours"
+  ],
+  "tags": [
+    "sports betting",
+    "microgaming",
+    "trusted brand",
+    "mobile"
+  ],
+  "publishedDate": "2026-04-22T09:38:00.585Z"
+}

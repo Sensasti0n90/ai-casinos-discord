@@ -1,0 +1,44 @@
+{
+  "name": "Test Casino",
+  "slug": "test-casino",
+  "url": "https://test.com",
+  "founded": 2026,
+  "rating": 4.5,
+  "bonus": "Up to $250 Welcome Bonus",
+  "bonus_code": "Test200",
+  "min_deposit": 10,
+  "wagering": 40,
+  "payment_methods": [
+    "Visa",
+    "Mastercard",
+    "Paysafecard"
+  ],
+  "withdrawal_time": "1-5 business days",
+  "languages": [
+    "English",
+    "Spanish",
+    "Portuguese",
+    "German"
+  ],
+  "mobile": true,
+  "live_casino": true,
+  "sports": true,
+  "slots": true,
+  "table_games": true,
+  "live_games": true,
+  "pros": [
+    "Good mobile experience",
+    "Microgaming powered"
+  ],
+  "cons": [
+    "Higher wagering requirements",
+    "Limited live chat hours"
+  ],
+  "tags": [
+    "sports betting",
+    "microgaming",
+    "trusted brand",
+    "mobile"
+  ],
+  "publishedDate": "2026-04-22T11:35:24.916Z"
+}

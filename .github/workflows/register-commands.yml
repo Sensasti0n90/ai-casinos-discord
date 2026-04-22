@@ -1,0 +1,65 @@
+# register-commands.yml
+# Run this ONCE to register Discord slash commands.
+# Trigger manually from: GitHub repo → Actions → Register Discord Commands → Run workflow
+
+name: Register Discord Commands
+
+on:
+  workflow_dispatch:   # manual trigger only
+
+jobs:
+  register:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Register slash commands
+        run: |
+          curl -s -o response.json -w "%{http_code}" \
+            -X PUT \
+            -H "Authorization: Bot ${{ secrets.DISCORD_BOT_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -d '[
+              {
+                "name": "review",
+                "description": "Generate and publish a casino review",
+                "options": [{
+                  "name": "casino",
+                  "description": "Casino name (leave empty for next in queue)",
+                  "type": 3,
+                  "required": false
+                }]
+              },
+              {
+                "name": "schedule",
+                "description": "Schedule a casino review for a specific date",
+                "options": [
+                  {"name":"casino","description":"Casino name","type":3,"required":true},
+                  {"name":"date","description":"Date YYYY-MM-DD","type":3,"required":true}
+                ]
+              },
+              {"name":"list",   "description":"Show published and pending casino reviews"},
+              {"name":"status", "description":"Show bot and site status"},
+              {"name":"help",   "description":"Show all available commands"}
+            ]' \
+            "https://discord.com/api/v10/applications/${{ secrets.DISCORD_APP_ID }}/commands" \
+          | tee http_code.txt
+
+          echo ""
+          echo "--- Response ---"
+          cat response.json | python3 -m json.tool 2>/dev/null || cat response.json
+
+      - name: Check result
+        run: |
+          if grep -q '"id"' response.json; then
+            echo "✅ Commands registered successfully!"
+            python3 -c "
+          import json
+          data = json.load(open('response.json'))
+          print(f'Registered {len(data)} command(s):')
+          for c in data:
+              print(f'  /{c[\"name\"]} – {c[\"description\"]}')
+          "
+          else
+            echo "❌ Registration failed. Check DISCORD_BOT_TOKEN and DISCORD_APP_ID secrets."
+            cat response.json
+            exit 1
+          fi

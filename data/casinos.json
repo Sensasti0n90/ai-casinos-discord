@@ -420,5 +420,41 @@
       "slots",
       "casumo"
     ]
+  },
+  {
+    "name": "Inbet",
+    "slug": "inbet",
+    "url": "https://Inbet.com",
+    "founded": 2015,
+    "rating": 4.9,
+    "bonus": "300 Fs",
+    "bonus_code": "Welcome 100",
+    "min_deposit": 100,
+    "wagering": 20,
+    "payment_methods": [
+      "Visa",
+      "Master Card"
+    ],
+    "withdrawal_time": "300$",
+    "languages": [
+      "English"
+    ],
+    "mobile": false,
+    "live_casino": false,
+    "sports": true,
+    "slots": true,
+    "table_games": false,
+    "live_games": false,
+    "pros": [
+      "Fast widthdraws"
+    ],
+    "cons": [
+      "Slow speed"
+    ],
+    "tags": [
+      "slots",
+      "sports-betting",
+      "inbet"
+    ]
   }
 ]

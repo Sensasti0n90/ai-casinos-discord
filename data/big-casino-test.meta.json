@@ -1,0 +1,37 @@
+{
+  "name": "Big Casino Test",
+  "slug": "big-casino-test",
+  "url": "https://big.casino.com",
+  "founded": 2026,
+  "rating": 3.5,
+  "bonus": "Up to 100%",
+  "bonus_code": "Welcome100",
+  "min_deposit": 200,
+  "wagering": 25,
+  "payment_methods": [
+    "Visa",
+    "Master Card"
+  ],
+  "withdrawal_time": "up to 500$",
+  "languages": [
+    "English",
+    "German"
+  ],
+  "mobile": false,
+  "live_casino": false,
+  "sports": false,
+  "slots": false,
+  "table_games": false,
+  "live_games": false,
+  "pros": [
+    "Big jackpot",
+    "Big widthdraw"
+  ],
+  "cons": [
+    "Speed limit"
+  ],
+  "tags": [
+    "big-casino-test"
+  ],
+  "publishedDate": "2026-04-23T14:18:41.217Z"
+}

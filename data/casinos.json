@@ -350,5 +350,40 @@
     "tags": [
       "big-casino-test"
     ]
+  },
+  {
+    "name": "Big Clash casino",
+    "slug": "big-clash-casino",
+    "url": "https://bigclash.com",
+    "founded": 2026,
+    "rating": 2.5,
+    "bonus": "Welcome bonus 100$",
+    "bonus_code": "Wlecome100",
+    "min_deposit": 200,
+    "wagering": 35,
+    "payment_methods": [
+      "Visa",
+      "Pay Pal"
+    ],
+    "withdrawal_time": "Up to 300$",
+    "languages": [
+      "English"
+    ],
+    "mobile": false,
+    "live_casino": false,
+    "sports": true,
+    "slots": false,
+    "table_games": false,
+    "live_games": false,
+    "pros": [
+      "Fast widthdraw"
+    ],
+    "cons": [
+      "Speed limit"
+    ],
+    "tags": [
+      "sports-betting",
+      "big-clash-casino"
+    ]
   }
 ]

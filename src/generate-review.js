@@ -21,6 +21,10 @@ function saveJSON(filePath, data) {
   fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
 }
 
+function toSlug(name) {
+  return name.toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-');
+}
+
 function starRating(rating) {
   const full  = Math.floor(rating);
   const half  = rating % 1 >= 0.5 ? 1 : 0;
@@ -268,11 +272,19 @@ async function main() {
   let casino;
 
   if (cliArg) {
-    casino = casinos.find(c =>
-      c.name.toLowerCase().includes(cliArg.toLowerCase()) ||
-      c.slug === cliArg
-    );
-    if (!casino) throw new Error(`Casino not found: ${cliArg}`);
+    const searchSlug = toSlug(cliArg);
+    const searchName = cliArg.toLowerCase().trim();
+
+    // 1. Точно съвпадение по slug  →  "inbet-casino" === "inbet-casino"
+    // 2. Точно съвпадение по name  →  "Inbet Casino" === "Inbet Casino"
+    // 3. Slug започва с търсения slug  →  "inbet-casino".startsWith("inbet")
+    // НЕ използваме includes() защото "rainbet".includes("inbet") = true!
+    casino =
+      casinos.find(c => c.slug === searchSlug) ||
+      casinos.find(c => c.name.toLowerCase() === searchName) ||
+      casinos.find(c => c.slug.startsWith(searchSlug + '-') || c.slug === searchSlug);
+
+    if (!casino) throw new Error(`Casino not found: "${cliArg}" (slug: "${searchSlug}"). Available: ${casinos.map(c => c.slug).join(', ')}`);
   } else {
     // Pick next unpublished casino
     const publishedSlugs = published.map(p => p.slug);

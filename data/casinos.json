@@ -456,5 +456,40 @@
       "sports-betting",
       "inbet"
     ]
+  },
+  {
+    "name": "88 Casino",
+    "slug": "88-casino",
+    "url": "https://88casino.com",
+    "founded": 2016,
+    "rating": 4.5,
+    "bonus": "100%",
+    "bonus_code": "Welcome40",
+    "min_deposit": 20,
+    "wagering": 20,
+    "payment_methods": [
+      "Visa"
+    ],
+    "withdrawal_time": "100$",
+    "languages": [
+      "English"
+    ],
+    "mobile": false,
+    "live_casino": false,
+    "sports": true,
+    "slots": true,
+    "table_games": false,
+    "live_games": false,
+    "pros": [
+      "Fast widthdraw"
+    ],
+    "cons": [
+      "Slow payout"
+    ],
+    "tags": [
+      "slots",
+      "sports-betting",
+      "88-casino"
+    ]
   }
 ]

@@ -1,0 +1,36 @@
+{
+  "name": "Casumo",
+  "slug": "casumo",
+  "url": "https://Casumo.com",
+  "founded": 2015,
+  "rating": 4.7,
+  "bonus": "200 Spins",
+  "bonus_code": "Welcome100",
+  "min_deposit": 100,
+  "wagering": 30,
+  "payment_methods": [
+    "Visa",
+    "Master Card"
+  ],
+  "withdrawal_time": "100$",
+  "languages": [
+    "English"
+  ],
+  "mobile": false,
+  "live_casino": false,
+  "sports": false,
+  "slots": true,
+  "table_games": false,
+  "live_games": false,
+  "pros": [
+    "Fast payout"
+  ],
+  "cons": [
+    "Slow speed"
+  ],
+  "tags": [
+    "slots",
+    "casumo"
+  ],
+  "publishedDate": "2026-04-23T22:17:26.838Z"
+}

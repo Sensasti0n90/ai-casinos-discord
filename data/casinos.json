@@ -532,5 +532,50 @@
       "live-casino",
       "snatch-casino"
     ]
+  },
+  {
+    "name": "RioAce Casino",
+    "slug": "rioace-casino",
+    "url": "https://www.rioace.com",
+    "founded": 2025,
+    "rating": 4.1,
+    "bonus": "Up to $100 Welcome Bonus",
+    "bonus_code": "RIO100",
+    "min_deposit": 10,
+    "wagering": 20,
+    "payment_methods": [
+      "Visa",
+      "Mastercard",
+      "PayPal",
+      "Skrill",
+      "Neteller",
+      "Bank Transfer"
+    ],
+    "withdrawal_time": "1-3 business days",
+    "languages": [
+      "English",
+      "Spanish",
+      "German",
+      "French",
+      "Italian"
+    ],
+    "mobile": true,
+    "live_casino": true,
+    "sports": true,
+    "slots": true,
+    "table_games": true,
+    "live_games": true,
+    "pros": [
+      "Huge sports betting section",
+      "Excellent mobile app"
+    ],
+    "cons": [
+      "Not available in all countries",
+      "Bonus wagering requirements can be high"
+    ],
+    "tags": [
+      "sports betting",
+      "mobile-friendly"
+    ]
   }
 ]

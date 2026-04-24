@@ -1,0 +1,42 @@
+{
+  "name": "Snatch Casino",
+  "slug": "snatch-casino",
+  "url": "https://snatchcasino.io/",
+  "founded": 2022,
+  "rating": 5,
+  "bonus": "450% up to $/â¬ 4000 + 325 Bonus spins",
+  "bonus_code": "CodeCasino",
+  "min_deposit": 20,
+  "wagering": 30,
+  "payment_methods": [
+    "Skrill",
+    "Neteller"
+  ],
+  "withdrawal_time": "$25",
+  "languages": [
+    "English",
+    "German"
+  ],
+  "mobile": false,
+  "live_casino": true,
+  "sports": false,
+  "slots": true,
+  "table_games": false,
+  "live_games": false,
+  "pros": [
+    "Crypto-friendly casino",
+    "Extensive collection of games",
+    "VPN-friendly"
+  ],
+  "cons": [
+    "Limited Responsible Gambling Tools",
+    "Low Withdrawal limits",
+    "No FAQs or Help Centre"
+  ],
+  "tags": [
+    "slots",
+    "live-casino",
+    "snatch-casino"
+  ],
+  "publishedDate": "2026-04-24T06:46:37.913Z"
+}

@@ -577,5 +577,45 @@
       "sports betting",
       "mobile-friendly"
     ]
+  },
+  {
+    "name": "Dux Casino",
+    "slug": "dux-casino",
+    "url": "https://www.duxcasino.com",
+    "founded": 2020,
+    "rating": 1.5,
+    "bonus": "Up to €/$500 + 150 Bonus spins",
+    "bonus_code": "WELCOMEDUX",
+    "min_deposit": 10,
+    "wagering": 20,
+    "payment_methods": [
+      "Visa",
+      "Wire Transfer"
+    ],
+    "withdrawal_time": "2-5 business days",
+    "languages": [
+      "English",
+      "Portuguese",
+      "Russian"
+    ],
+    "mobile": true,
+    "live_casino": true,
+    "sports": true,
+    "slots": true,
+    "table_games": true,
+    "live_games": true,
+    "pros": [
+      "One of the oldest casinos online",
+      "Licensed in Gibraltar"
+    ],
+    "cons": [
+      "Slower withdrawals compared to competitors",
+      "Customer support can be slow"
+    ],
+    "tags": [
+      "veteran casino",
+      "own software",
+      "poker"
+    ]
   }
 ]
